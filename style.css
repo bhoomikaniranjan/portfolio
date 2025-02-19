@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #020202;
+    color: rgb(213, 204, 191);
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(213, 204, 191);
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(213, 204, 191);
+    font-weight: 300;
+    margin-left: 35px;
+    transition: 1s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: rgb(96, 129, 184);
+}
+
+.home,
+.contact,
+.skills,
+.experience,
+.education {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+}
+
+.home-content {
+    max-width: 1000px;
+}
+
+.home-content h1 {
+    font-size: 58px;
+    font-weight: 700;
+}
+
+.home-content h3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(60, 149, 244);
+}
+
+.home-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content .btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid rgb(60, 149, 244);
+    border-radius: 10px;
+    font-size: 19px;
+    color: rgb(60, 149, 244);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .9s;
+}
+
+.btn-box a:hover,
+.home-sci a:hover {
+    background-color: rgb(60, 149, 244);
+    color: #081b29;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(60, 149, 244);
+    color: rgb(60, 149, 244);
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.image {
+    border-radius: 35%;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+
+/* contact Section */
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 950px;
+    background: transparent;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.contact-container h1 {
+    margin-bottom: 20px;
+    color: rgb(213, 204, 191);
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #2d0a0a;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-container button {
+    background-color: rgb(60, 149, 244);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-container button:hover {
+    background-color: #45a049;
+}
+
+
+/* skills Section */
+
+.skills-container {
+    width: 80%;
+    max-width: 800px;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skills-container h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(213, 204, 191);
+    margin-bottom: 20px;
+}
+
+.skill-category {
+    margin-bottom: 20px;
+}
+
+.skill-category h2 {
+    font-size: 1.5rem;
+    color: rgb(213, 204, 191);
+    margin-bottom: 10px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    flex: 1;
+    color: rgb(213, 204, 191);
+}
+
+.progress-bar-container {
+    width: 70%;
+    background-color: rgb(213, 204, 191);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: rgb(60, 149, 244);
+}
+
+.beginner {
+    width: 40%;
+}
+
+.intermediate {
+    width: 70%;
+}
+
+.advanced {
+    width: 90%;
+}
+
+
+/* education Section */
+
+.education-container {
+    width: 80%;
+    max-width: 700px;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+}
+
+.education-container h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(213, 204, 191);
+    margin-bottom: 20px;
+}
+
+.timeline {
+    position: relative;
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 12px;
+    width: 1px;
+    height: 100%;
+    background-color: rgb(60, 149, 244);
+    border-radius: 1.8px;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-color: rgb(213, 204, 191) solid 10px;
+    border-radius: 30px;
+    border: 4px solid rgb(60, 149, 244);
+    border-width: 1.8px;
+}
+
+.timeline-item h2 {
+    font-size: 1.1rem;
+    color: rgb(213, 204, 191);
+    margin-bottom: 5px;
+}
+
+.timeline-item h3 {
+    font-size: 1rem;
+    color: rgb(213, 204, 191);
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.timeline-item p {
+    font-size: 0.9rem;
+    color: rgb(213, 204, 191);
+}
+
+.timeline-item span {
+    font-size: 0.85rem;
+    color: rgb(213, 204, 191);
+    font-style: italic;
+}
+
+* Experience Section */ .experience-container {
+    width: 80%;
+    max-width: 700px;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+}
+
+.experience-container h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(213, 204, 191);
+    margin-bottom: 20px;
+}
+
+.timeline {
+    position: relative;
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 12px;
+    width: 1px;
+    height: 100%;
+    background-color: rgb(60, 149, 244);
+    border-radius: 1.8px;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-color: rgb(213, 204, 191) solid 10px;
+    border-radius: 30px;
+    border: 4px solid rgb(60, 149, 244);
+    border-width: 1.8px;
+}
+
+.timeline-item h2 {
+    font-size: 1.1rem;
+    color: rgb(213, 204, 191);
+    margin-bottom: 5px;
+}
+
+.timeline-item h3 {
+    font-size: 1rem;
+    color: rgb(213, 204, 191);
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.timeline-item p {
+    font-size: 0.9rem;
+    color: rgb(213, 204, 191);
+}
+
+.timeline-item span {
+    font-size: 0.85rem;
+    color: rgb(213, 204, 191);
+    font-style: italic;
+}
+
+
+/* Project Section */
+
+.proj {
+    height: 50vh;
+    padding: 5%;
+}
+
+.project {
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 26px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(213, 204, 191);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.project-header h2 {
+    font-size: 1.3em;
+    color: rgb(213, 204, 191);
+}
+
+.project-date {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.project-description {
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.project-tech h3 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.project-tech ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-tech li {
+    background-color: #afb2b6;
+    color: black;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.project-links {
+    margin-top: 15px;
+}
+
+.project-links a {
+    text-decoration: none;
+    color: rgb(60, 149, 244);
+    border: 2px solid rgb(60, 149, 244);
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 10px;
+    font-size: 13px;
+}
+
+.project-links a:hover {
+    background-color: rgb(60, 149, 244);
+    color: #fff;
+}
